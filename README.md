@@ -84,29 +84,28 @@ The ablation experiments use **5 independent seeds**, as reported in the Supplem
 ### Reward Ablation
 
 ```bash
-python ablation_runner.py --scenario static --seeds 5 --episodes 50 --cases-per-episode 30 --out ablation_reward.csv
+python ablation_runner.py --scenario static --seeds 30 --episodes 50 --cases-per-episode 30 --out ablation_reward.csv
 ```
 
 ### Fuzzy Prioritization Ablation
 
 ```bash
-python ablation_fuzzy_prioritization.py --scenario static --seeds 5 --episodes 50 --cases-per-episode 30 --out ablation_fuzzy.csv
+python ablation_fuzzy_prioritization.py --scenario static --seeds 30 --episodes 50 --cases-per-episode 30 --out ablation_fuzzy.csv
 ```
 
 ### DRL Scheduling Ablation
 
 ```bash
-python ablation_drl_scheduling.py --scenario static --seeds 5 --episodes 50 --cases-per-episode 30 --out ablation_drl.csv
+python ablation_drl_scheduling.py --scenario static --seeds 30 --episodes 50 --cases-per-episode 30 --out ablation_drl.csv
 ```
 
 ## Sensitivity Analysis
 
 The priority-noise sensitivity analysis evaluates the robustness of the prioritization component under perturbed priority values.
 
-The analysis uses **5 independent seeds**:
 
 ```bash
-python sensitivity_analysis_priority_noise.py --scenario static --seeds 5 --episodes 50 --cases-per-episode 30 --out sensitivity_priority_noise_results.csv
+python sensitivity_analysis_priority_noise.py --scenario static --seeds 30 --episodes 50 --cases-per-episode 30 --out sensitivity_priority_noise_results.csv
 ```
 
 The resulting file is:
@@ -152,7 +151,6 @@ The reproducibility settings are divided according to the type of experiment:
 | Sensitivity analysis | 5 |
 | Offloading analysis | 5 |
 
-The main comparison uses **30 independent seeds**, while the ablation, sensitivity, and offloading analyses use **5 independent seeds**, consistent with the experimental protocol described in the Supplementary Material.
 
 ## Fog–Cloud Offloading
 
@@ -193,7 +191,7 @@ For a full reproduction of the main comparison:
 | Main seeds | 30 |
 | Main episodes | 100 |
 | Cases per episode | 30 |
-| Ablation/sensitivity seeds | 5 |
+| Ablation/sensitivity seeds | 30 |
 | Ablation/sensitivity episodes | 50 |
 | Fuzzy rules | 324 |
 | Cloud offloading | Explicit environment action |
