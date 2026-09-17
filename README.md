@@ -79,7 +79,7 @@ comparison_dynamic.csv
 
 ## Ablation Studies
 
-The ablation experiments use **5 independent seeds**, as reported in the Supplementary Material.
+The ablation experiments,  as reported in the Supplementary Material.
 
 ### Reward Ablation
 
@@ -147,9 +147,9 @@ The reproducibility settings are divided according to the type of experiment:
 | Experiment | Number of Seeds |
 |---|---:|
 | Main comparison | 30 |
-| Ablation studies | 5 |
-| Sensitivity analysis | 5 |
-| Offloading analysis | 5 |
+| Ablation studies | 30 |
+| Sensitivity analysis | 30 |
+| Offloading analysis | 30 |
 
 
 ## Fog–Cloud Offloading
@@ -169,7 +169,7 @@ For a full reproduction of the main comparison:
 3. Verify the default configuration in `config.py`.
 4. Run the static main experiment with 30 seeds.
 5. Run the dynamic scenario if required.
-6. Run the ablation and sensitivity experiments using their specified 5-seed configurations.
+6. Run the ablation and sensitivity experiments using their specified 30-seed configurations.
 7. Export the 324 fuzzy rules using `export_fuzzy_rules.py`.
 8. Compare the generated CSV files with the corresponding results reported in the manuscript and Supplementary Material.
 
