@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.ipynb_checkpoints/
+*.csv
+!data/heart_disease.csv
+!fuzzy_rule_coefficients_324.csv
+comparison_*.csv
+ablation_*.csv
+sensitivity_*.csv
+*.png
+.DS_Store
